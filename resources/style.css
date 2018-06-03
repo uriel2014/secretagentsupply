@@ -185,3 +185,41 @@ footer p{
   margin-left:9rem;
 }
 /* Give the footer p a left margin of 9rem.*/
+
+@media only screen and (max-width:1024px) and
+(orientation:portrait){
+  .gallery .picture{
+    width:47%;
+  }
+  .merchandise nav ul li{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:470px){
+  .main-photo{
+    height:15rem;
+  }
+  .main-photo .describe {
+    width:100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    margin-top:10rem;
+  }
+  .main-photo .describe h5{
+    font-size:0.77rem;
+  }
+  .main-photo .describe h1{
+    font-size:1rem;
+  }
+  .gallery .picture{
+    width:90%;
+  }
+  .Information{
+    flex-wrap: wrap;
+  }
+  .Information .box{
+    width:90%;
+    margin-bottom:0.5rem;
+  }
+  footer{text-align:center;}
+}
