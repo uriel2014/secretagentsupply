@@ -2,3 +2,143 @@
 html {
   font-size: 18px;
 }
+
+body {
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+
+/*HEADER SECTION STYLING */
+.header{
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  height: auto;
+  background-color: black;
+}
+
+/* We make the header a flex container, vertically center the
+flex items, and make them flex-start for horizontal alignment.
+Give the header a background color of black and make the height
+auto */
+
+.header img {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+}
+/* Here we give the image a margin left and a height*/
+.header h4 {
+  padding-left: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  color: white;
+}
+/*give h4 padding properites and color of white. */
+
+/*MAIN IMAGE STYLING */
+
+.main-photo{
+  display:flex;
+  height:25rem;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ justify-content: flex-start;
+}
+
+/*Make the image container justify content at flex-Start
+Then give the image position center, cover, and no repeat.
+give the image a height of 25rem */
+
+.main-photo .describe {
+  width:20rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom:7rem;
+  background-color: black;
+  color:white;
+  font-weight:bold;
+  margin:9rem;
+}
+/* Here we give the content in the image padding left of 3rem,
+width of 20rem, padding top of 2rem, bottom padding of 7rem,
+background color of black and color of white.
+We also give the content a margin of 9rem to margin from all sides.*/
+
+.main-photo .describe h5{
+  font-size:1rem;
+  margin-bottom:0.25rem;
+}
+.main-photo .describe h1{
+  font-size:2rem;
+}
+/* Give specific qualities to the h5 and h1. h5 has a margin bottom of
+0.25rem then it follows with h1 having font-size of 2 rem.*/
+
+
+/* MERCHANDISE SECTION STYLING*/
+
+.merchandise{
+  background-color: firebrick;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+}
+/*We make a felx container with space between*/
+
+.merchandise nav ul{
+  list-style-type: none;
+  margin-left:9rem;
+}
+/* We make the list style type as none, and give the ul
+a margin-left of 9rem*/
+
+.merchandise nav ul li{
+  display:inline-block;
+  padding: 0.75rem;
+  margin-right: 5rem;
+}
+/*Next, each li will be displayed as an inline-block
+we adding padding and margin right of 5rem of each li. */
+
+
+/* IMAGE GALLERY SECTION*/
+
+.gallery{
+  display:flex;
+  justify-content:center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.gallery .picture{
+  border:4px solid black;
+  margin:3rem;
+  width:30%;
+}
+
+.gallery .picture img{
+  height:9rem;
+  margin:2rem;
+}
+
+.gallery .picture h3{
+  background-color: black;
+  color:white;
+  display:inline-block;
+  padding:0.5rem;
+  text-align:center;
+}
+
+
+footer{
+  height:5rem;
+  background-color: black;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+footer p{
+  margin-left:9rem;
+}
