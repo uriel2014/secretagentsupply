@@ -107,30 +107,70 @@ we adding padding and margin right of 5rem of each li. */
 
 .gallery{
   display:flex;
-  justify-content:center;
+  justify-content:space-between;
   width: 960px;
   margin: 0 auto;
 }
+/* Here we created the flex container for gallery,
+with the given width of 960px, to make it align center
+we use the margin: 0 auto, and to justify the
+content between flex item we use space-between. */
 
 .gallery .picture{
   border:4px solid black;
-  margin:3rem;
   width:30%;
+  margin: 3rem 0;
 }
+/*For each picture element we give a border.
+We then give it the gien width of 30%.
+And give each picture a margin of only top and Bottom
+to be 3 rem. left and right are 0 */
 
 .gallery .picture img{
   height:9rem;
   margin:2rem;
 }
-
+/*Image has the following properties given.
+we use margin because img and h3 are considered outside
+ of each other */
 .gallery .picture h3{
   background-color: black;
   color:white;
-  display:inline-block;
   padding:0.5rem;
   text-align:center;
 }
+/* lastly we make the h3 have a background color of black and
+color of white, give it padding space and align it centered*/
 
+
+/*LOCATION And HOURS SECTION */
+.Information{
+  display:flex;
+  width:960px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* make information a flex container,
+given width of 960 and perfectly center.
+remember to justify content with space between.*/
+.Information .box{
+  width:35%;
+}
+/* This will set to a certain wideth of 35%*/
+
+.Information .box h3{
+  background-color: black;
+  color:white;
+  padding:1rem 2rem;
+}
+/*These are all given properties */
+
+.Information .box p{
+  margin-bottom:4rem;
+}
+/*Text will be by default to the left.
+and will have a margin to the bottom of 4 rem. */
 
 footer{
   height:5rem;
@@ -139,6 +179,9 @@ footer{
   display:flex;
   align-items:center;
 }
+/*make the footer element a flex container.
+with vertical alignment */
 footer p{
   margin-left:9rem;
 }
+/* Give the footer p a left margin of 9rem.*/
